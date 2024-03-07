@@ -95,11 +95,11 @@ function moverParaBaixo() {
 
 function girarHorario() {
     console.clear();
-    anguloAvatar = getAngle(imgAvatar);
+    console.log("Ângulo do avatar antes: ", anguloAvatar + "deg");
     if (anguloAvatar < anguloFinal) {
-    posicaoSuperior += parseInt(txtPixel.value);
+        anguloAvatar += parseInt(txtPixel.value);
         if (anguloAvatar > anguloFinal) {
-            anguloFinal = anguloFinal;
+            anguloAvatar = anguloFinal;
     }
     imgAvatar.style.transform = "rotate(" + anguloAvatar + "deg)";
     } else {
